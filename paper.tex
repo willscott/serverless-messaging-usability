@@ -1,0 +1,133 @@
+\documentclass{sig-alternate-10pt}
+
+%\usepackage{usenix_shorttitle}
+\usepackage{graphicx}
+\usepackage{caption} % better placing of figures
+\usepackage{subcaption}
+
+\usepackage{listings}
+
+\usepackage[hidelinks]{hyperref}
+
+% Add line between figure and text
+\makeatletter
+\def\topfigrule{\kern3\p@ \hrule \kern -3.4\p@} % the \hrule is .4pt high
+\def\botfigrule{\kern-3\p@ \hrule \kern 2.6\p@} % the \hrule is .4pt high
+\def\dblfigrule{\kern3\p@ \hrule \kern -3.4\p@} % the \hrule is .4pt high
+\makeatother
+
+\makeatletter
+\newcommand\subparagraph{%
+  \@startsection{subparagraph}{5}
+  {\parindent}
+  {3.25ex \@plus 1ex \@minus .2ex}
+  {-1em}
+  {\normalfont\normalsize\bfseries}}
+\makeatother
+%\usepackage{titlesec}
+\let\subparagraph\relax % You don't want to use \subparagraph
+
+\usepackage[compact]{titlesec}
+\usepackage{multirow}
+%\titlespacing*{\section}{0pt}{8pt}{2pt}
+
+\makeatletter
+\def\verbatim@font{\ttfamily}
+\makeatother
+
+%% \addtolength{\topmargin}{-.175in}
+
+%\usepackage[tight]{subfigure}
+\usepackage{url,times}
+\usepackage{color}
+\newtheorem{theorem}{\sc{Theorem}}
+\newcommand{\reminder}[1]{\textcolor{blue}{\textbf{XX #1 XX}}}
+\newcommand{\eat}[1]{}
+%\usepackage[tight]{subfigure}
+\usepackage{microtype}
+\usepackage{ wasysym }
+\usepackage{authblk}
+\usepackage{listings}
+\setcounter{Maxaffil}{3}
+\setlength{\affilsep}{-0.4em}
+
+\setlength\paperheight {11in}
+\setlength\paperwidth {8.5in}
+\setlength{\textwidth}{7in}
+\setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\evensidemargin}{-.25in}
+
+
+\newcommand{\don}[1]{\textcolor{red}{#1}}
+
+\newcommand{\sam}[1]{\textcolor{blue}{#1}}
+
+\newcommand{\ak}[1]{\textcolor{blue}{#1}}
+
+\newcommand{\tbd}{{\em TBD}}
+
+%WAY TO SAVE SPACE
+\setlength{\textfloatsep}{5pt}
+%\setlength{\parskip}{0pt}
+%\setlength{\parsep}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\topskip}{0pt}
+%\setlength{\topmargin}{0pt}
+%\setlength{\topsep}{0pt}
+%\setlength{\partopsep}{0pt}
+
+
+
+\title{Design and Usability of a Serverless Messaging System}
+
+\newif\ifanon
+\anontrue
+%\anonfalse
+
+\ifanon
+\author{Paper \#33}
+\else
+\author{John Brooks}
+\author{Will Scott}
+\fi
+
+\input{macros}
+
+\graphicspath{{resources/}}
+
+\begin{document}
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+\begin{abstract}
+%\input{abstract}
+\end{abstract}
+
+% no keywords
+
+
+
+\section{Introduction}
+%\input{introduction}
+
+\section{Background}
+%\input{background}
+
+\section{Conclusion}
+%\input{conclusion}
+
+
+\pagebreak
+
+%\footnotesize{
+  \bibliographystyle{abbrv}
+%}
+\bibliography{paper}
+
+
+% that's all folks
+\end{document}
