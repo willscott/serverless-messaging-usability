@@ -67,6 +67,9 @@
 
 \newcommand{\tbd}{{\em TBD}}
 
+\newcommand{\todo}[1]{\textcolor{red}{[[\textbf{#1}]]}}
+\newcommand{\systemname}{Ricochet~}
+
 %WAY TO SAVE SPACE
 \setlength{\textfloatsep}{5pt}
 %\setlength{\parskip}{0pt}
@@ -92,8 +95,6 @@
 \author{Will Scott}
 \fi
 
-\input{macros}
-
 \graphicspath{{resources/}}
 
 \begin{document}
@@ -116,6 +117,12 @@
 
 \section{Background}
 %\input{background}
+
+\section{Design \& Implementation}
+\input{design}
+
+\section{Evaluation}
+\input{evaluation}
 
 \section{Conclusion}
 %\input{conclusion}
